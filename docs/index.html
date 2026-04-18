@@ -142,23 +142,9 @@
 
                             Construímos uma identidade própria o jeito CS de ser. Um ambiente irreverente, profissional e ao mesmo tempo próximo. Aqui, não existe apenas a relação entre professor e aluno. Existe conexão, acompanhamento de verdade e um sentimento de pertencimento.
                         </p>
-                        <div class="sobre__stats" aria-label="Números da academia">
-                            <div class="stat">
-                                <span class="stat__number">500+</span>
-                                <span class="stat__label">Alunos</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat__number">4</span>
-                                <span class="stat__label">Professores</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat__number">6+</span>
-                                <span class="stat__label">Modalidades</span>
-                            </div>
-                        </div>
                     </div>
                     <div class="sobre__image">
-                        <img src="assets/images/galeria/galeria.png"
+                        <img src="assets/images/hero.PNG"
                              alt="Interior da CS Training Center - Área de musculação"
                              loading="lazy"
                              width="600" height="460">
@@ -222,6 +208,14 @@
                         </div>
                         <h3>Muay Thai</h3>
                         <p>Arte marcial completa que desenvolve força, resistência, agilidade e autodisciplina.</p>
+                    </article>
+
+                    <article class="servico-card">
+                        <div class="servico-card__icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 1 5 5c0 2-1 3.5-2.5 4.5"/><path d="M7 7a5 5 0 0 0 5 5"/><path d="M3 17c0-3 2.5-5 6-5h6c3.5 0 6 2 6 5"/><line x1="12" y1="12" x2="12" y2="22"/></svg>
+                        </div>
+                        <h3>Pilates</h3>
+                        <p>Método que fortalece o core, melhora a postura, flexibilidade e proporciona bem-estar físico e mental.</p>
                     </article>
 
                 </div>
@@ -345,84 +339,19 @@
                     <span class="section-tag">Nossa Estrutura</span>
                     <h2 class="section-title" id="galeria-titulo">Galeria</h2>
                 </div>
-                <div class="galeria__grid">
-                    <figure class="galeria__item galeria__item--featured">
-                        <img src="assets/images/hero.jpg"
-                             alt="Sala principal da CS Training Center"
-                             loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="assets/images/galeria/galeria.png"
-                             alt="Área de musculação da CS Training Center"
-                             loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="assets/images/galeria/galeria1.png"
-                             alt="Equipamentos da CS Training Center"
-                             loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="assets/images/galeria/galeria2.png"
-                             alt="Área de aulas coletivas da CS Training Center"
-                             loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="assets/images/galeria/IMG_0147.JPG.jpeg"
-                             alt="CS Training Center" loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="assets/images/galeria/IMG_0424.PNG"
-                             alt="CS Training Center" loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="assets/images/galeria/IMG_0425.PNG"
-                             alt="CS Training Center" loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="assets/images/galeria/IMG_0428.PNG"
-                             alt="CS Training Center" loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="assets/images/galeria/IMG_1182.PNG"
-                             alt="CS Training Center" loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="assets/images/galeria/IMG_1424.PNG"
-                             alt="CS Training Center" loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="assets/images/galeria/IMG_1456.PNG"
-                             alt="CS Training Center" loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="assets/images/galeria/IMG_1699.PNG"
-                             alt="CS Training Center" loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="assets/images/galeria/IMG_1715.PNG"
-                             alt="CS Training Center" loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="assets/images/galeria/IMG_0268.HEIC"
-                             alt="CS Training Center" loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="assets/images/galeria/IMG_0366.HEIC"
-                             alt="CS Training Center" loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="assets/images/galeria/IMG_0563.HEIC"
-                             alt="CS Training Center" loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="assets/images/galeria/IMG_1599.HEIC"
-                             alt="CS Training Center" loading="lazy">
-                    </figure>
-                    <figure class="galeria__item">
-                        <img src="assets/images/galeria/IMG_2546.HEIC"
-                             alt="CS Training Center" loading="lazy">
-                    </figure>
+                <div class="galeria-carousel" role="region" aria-label="Carrossel de fotos">
+                    <div class="galeria-carousel__viewport" id="galeriaViewport">
+                        <div class="galeria-carousel__track" id="galeriaTrack"></div>
+                    </div>
+                    <button class="galeria-carousel__nav galeria-carousel__nav--prev" id="galeriaPrev" aria-label="Foto anterior">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                    </button>
+                    <button class="galeria-carousel__nav galeria-carousel__nav--next" id="galeriaNext" aria-label="Próxima foto">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                    </button>
+                    <div class="galeria-carousel__counter" id="galeriaCounter" aria-live="polite">1 / 13</div>
                 </div>
+                <div class="galeria-carousel__thumbs" id="galeriaThumbs" role="list" aria-label="Miniaturas da galeria"></div>
             </div>
         </section>
 
@@ -438,49 +367,49 @@
 
                     <article class="professor-card">
                         <div class="professor-card__photo">
-                            <img src="https://i.pravatar.cc/300?img=11"
-                                 alt="Professor de Musculação e Funcional"
+                            <img src="assets/images/equipe/cristhian.jpeg"
+                                 alt="Cristhian - Fundador e Professor de Educação Física"
                                  loading="lazy" width="300" height="300">
                         </div>
                         <div class="professor-card__info">
-                            <h3>Professor</h3>
-                            <span>Musculação &amp; Funcional</span>
+                            <h3>Cristhian</h3>
+                            <span>Fundador &amp; Prof. de Educação Física</span>
                         </div>
                     </article>
 
                     <article class="professor-card">
                         <div class="professor-card__photo">
-                            <img src="https://i.pravatar.cc/300?img=5"
-                                 alt="Professora de Dança e Jump"
+                            <img src="assets/images/equipe/andre.jpg"
+                                 alt="André - Professor de Educação Física"
                                  loading="lazy" width="300" height="300">
                         </div>
                         <div class="professor-card__info">
-                            <h3>Professora</h3>
-                            <span>Dança &amp; Jump</span>
+                            <h3>André</h3>
+                            <span>Prof. de Educação Física</span>
                         </div>
                     </article>
 
                     <article class="professor-card">
                         <div class="professor-card__photo">
-                            <img src="https://i.pravatar.cc/300?img=12"
-                                 alt="Professor de Muay Thai"
+                            <img src="assets/images/equipe/rodrigo.PNG"
+                                 alt="Rodrigo - Professor de Educação Física"
                                  loading="lazy" width="300" height="300">
                         </div>
                         <div class="professor-card__info">
-                            <h3>Professor</h3>
-                            <span>Muay Thai</span>
+                            <h3>Rodrigo</h3>
+                            <span>Prof. de Educação Física</span>
                         </div>
                     </article>
 
                     <article class="professor-card">
                         <div class="professor-card__photo">
-                            <img src="https://i.pravatar.cc/300?img=9"
-                                 alt="Professora de Aeróbios e Funcional"
+                            <img src="assets/images/equipe/larissa.PNG"
+                                 alt="Larissa - Professora de Pilates"
                                  loading="lazy" width="300" height="300">
                         </div>
                         <div class="professor-card__info">
-                            <h3>Professora</h3>
-                            <span>Aeróbios &amp; Funcional</span>
+                            <h3>Larissa</h3>
+                            <span>Professora de Pilates</span>
                         </div>
                     </article>
 
@@ -663,8 +592,119 @@
         }, { threshold: 0.1 });
 
         document.querySelectorAll(
-            '.servico-card, .plano-card, .professor-card, .galeria__item, .sobre__grid, .contato__item'
+            '.servico-card, .plano-card, .professor-card, .sobre__grid, .contato__item'
         ).forEach(el => revealObserver.observe(el));
+    </script>
+
+    <script>
+    // Gallery Carousel
+    (function () {
+        var images = [
+            { src: 'assets/images/hero.PNG',                   alt: 'CS Training Center' },
+            { src: 'assets/images/galeria/IMG_0424.PNG',        alt: 'CS Training Center' },
+            { src: 'assets/images/galeria/IMG_1182.PNG',        alt: 'CS Training Center' },
+            { src: 'assets/images/galeria/IMG_1424.PNG',        alt: 'CS Training Center' },
+            { src: 'assets/images/galeria/IMG_1456.PNG',        alt: 'CS Training Center' },
+            { src: 'assets/images/galeria/IMG_1699.PNG',        alt: 'CS Training Center' },
+            { src: 'assets/images/galeria/IMG_1715.PNG',        alt: 'CS Training Center' },
+            { src: 'assets/images/galeria/IMG_2663.PNG',        alt: 'CS Training Center' },
+            { src: 'assets/images/galeria/IMG_2664.PNG',        alt: 'CS Training Center' },
+            { src: 'assets/images/galeria/IMG_0268.jpg',        alt: 'CS Training Center' },
+            { src: 'assets/images/galeria/IMG_0366.jpg',        alt: 'CS Training Center' },
+            { src: 'assets/images/galeria/IMG_1599.jpg',        alt: 'CS Training Center' },
+            { src: 'assets/images/galeria/IMG_2546.jpg',        alt: 'CS Training Center' },
+        ];
+
+        var track    = document.getElementById('galeriaTrack');
+        var thumbsEl = document.getElementById('galeriaThumbs');
+        var counter  = document.getElementById('galeriaCounter');
+        var prevBtn  = document.getElementById('galeriaPrev');
+        var nextBtn  = document.getElementById('galeriaNext');
+        var viewport = document.getElementById('galeriaViewport');
+
+        if (!track) return;
+
+        var current = 0;
+        var total   = images.length;
+        counter.textContent = '1 / ' + total;
+
+        // Build slides + thumbnails
+        images.forEach(function (img, i) {
+            // Slide
+            var slide = document.createElement('div');
+            slide.className = 'galeria-carousel__slide';
+            var image = document.createElement('img');
+            image.src     = img.src;
+            image.alt     = img.alt;
+            image.loading = i === 0 ? 'eager' : 'lazy';
+            slide.appendChild(image);
+            track.appendChild(slide);
+
+            // Thumbnail
+            var thumb = document.createElement('button');
+            thumb.className = 'galeria-carousel__thumb' + (i === 0 ? ' active' : '');
+            thumb.setAttribute('aria-label', 'Ver foto ' + (i + 1));
+            thumb.setAttribute('role', 'listitem');
+            var tImg = document.createElement('img');
+            tImg.src     = img.src;
+            tImg.alt     = '';
+            tImg.loading = 'lazy';
+            thumb.appendChild(tImg);
+            thumb.addEventListener('click', function () { goTo(i); });
+            thumbsEl.appendChild(thumb);
+        });
+
+        function update() {
+            track.style.transform = 'translateX(-' + (current * 100) + '%)';
+            counter.textContent   = (current + 1) + ' / ' + total;
+            Array.from(thumbsEl.children).forEach(function (t, i) {
+                t.classList.toggle('active', i === current);
+            });
+            var activeThumb = thumbsEl.children[current];
+            if (activeThumb) {
+                activeThumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            }
+        }
+
+        function goTo(index) {
+            current = (index + total) % total;
+            update();
+        }
+
+        prevBtn.addEventListener('click', function () { goTo(current - 1); });
+        nextBtn.addEventListener('click', function () { goTo(current + 1); });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'ArrowLeft')  goTo(current - 1);
+            if (e.key === 'ArrowRight') goTo(current + 1);
+        });
+
+        // Touch / swipe
+        var touchStartX = 0;
+        viewport.addEventListener('touchstart', function (e) {
+            touchStartX = e.touches[0].clientX;
+        }, { passive: true });
+        viewport.addEventListener('touchend', function (e) {
+            var dx = e.changedTouches[0].clientX - touchStartX;
+            if (Math.abs(dx) > 40) goTo(current + (dx < 0 ? 1 : -1));
+        });
+
+        // Mouse drag (desktop)
+        var dragStartX = 0;
+        var isDragging = false;
+        viewport.addEventListener('mousedown', function (e) {
+            dragStartX = e.clientX;
+            isDragging = true;
+        });
+        viewport.addEventListener('mouseup', function (e) {
+            if (!isDragging) return;
+            isDragging = false;
+            var dx = e.clientX - dragStartX;
+            if (Math.abs(dx) > 40) goTo(current + (dx < 0 ? 1 : -1));
+        });
+        viewport.addEventListener('mouseleave', function () { isDragging = false; });
+    })();
     </script>
 
 </body>

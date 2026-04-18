@@ -203,6 +203,19 @@ address { font-style: normal; }
     gap: 1rem;
 }
 
+.nav__logo {
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 12px;
+    padding: 4px 10px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transition: background var(--transition);
+}
+
+.header--scrolled .nav__logo {
+    background: rgba(255, 255, 255, 0.12);
+}
+
 .nav__logo img {
     height: 72px;
     width: auto;
@@ -272,7 +285,7 @@ address { font-style: normal; }
     min-height: 100svh;
     display: flex;
     align-items: center;
-    background: url('../images/hero.jpg') center / cover no-repeat;
+    background: url('../images/hero.PNG') center / cover no-repeat;
 }
 
 .hero__overlay {
@@ -576,37 +589,120 @@ address { font-style: normal; }
 .plano-card .btn { width: 100%; }
 
 /* =============================================
-   GALERIA
+   GALERIA — CARROSSEL
    ============================================= */
 .galeria {
     padding-block: clamp(4rem, 8vw, 7rem);
     background: var(--color-dark-2);
 }
 
-.galeria__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1rem;
+.galeria-carousel {
+    position: relative;
 }
 
-.galeria__item {
+.galeria-carousel__viewport {
     overflow: hidden;
     border-radius: var(--radius-lg);
-    aspect-ratio: 4 / 3;
+    background: #0a0a0a;
+    height: clamp(340px, 72vh, 740px);
+    cursor: grab;
+}
+.galeria-carousel__viewport:active { cursor: grabbing; }
+
+.galeria-carousel__track {
+    display: flex;
+    height: 100%;
+    will-change: transform;
+    transition: transform .45s cubic-bezier(.4, 0, .2, 1);
 }
 
-.galeria__item--featured {
-    grid-column: span 2;
-    aspect-ratio: 16 / 7;
+.galeria-carousel__slide {
+    flex: 0 0 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.galeria__item img {
+.galeria-carousel__slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    user-select: none;
+    pointer-events: none;
+    display: block;
+}
+
+.galeria-carousel__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .55);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,.1);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .2s, transform .2s;
+    z-index: 2;
+}
+.galeria-carousel__nav:hover {
+    background: rgba(0, 0, 0, .85);
+    transform: translateY(-50%) scale(1.08);
+}
+.galeria-carousel__nav--prev { left: .75rem; }
+.galeria-carousel__nav--next { right: .75rem; }
+.galeria-carousel__nav svg { width: 22px; height: 22px; }
+
+.galeria-carousel__counter {
+    text-align: center;
+    margin-block: .75rem .5rem;
+    font-size: .82rem;
+    color: var(--color-text-muted);
+    letter-spacing: .08em;
+}
+
+.galeria-carousel__thumbs {
+    display: flex;
+    gap: .5rem;
+    overflow-x: auto;
+    padding-block: .25rem .5rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) transparent;
+}
+.galeria-carousel__thumbs::-webkit-scrollbar { height: 3px; }
+.galeria-carousel__thumbs::-webkit-scrollbar-track { background: transparent; }
+.galeria-carousel__thumbs::-webkit-scrollbar-thumb { background: var(--color-primary); border-radius: 2px; }
+
+.galeria-carousel__thumb {
+    flex: 0 0 80px;
+    height: 58px;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid transparent;
+    background: #0a0a0a;
+    padding: 0;
+    opacity: .45;
+    transition: border-color .2s, opacity .2s, transform .2s;
+}
+.galeria-carousel__thumb.active {
+    border-color: var(--color-primary);
+    opacity: 1;
+}
+.galeria-carousel__thumb:hover { opacity: .8; transform: scale(1.05); }
+.galeria-carousel__thumb img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform .45s ease;
+    pointer-events: none;
+    display: block;
 }
-.galeria__item:hover img { transform: scale(1.04); }
 
 /* =============================================
    EQUIPE
@@ -893,8 +989,10 @@ address { font-style: normal; }
     .planos__grid   { grid-template-columns: 1fr; }
     .footer__grid   { grid-template-columns: 1fr; }
 
-    .galeria__grid { grid-template-columns: 1fr; }
-    .galeria__item--featured { grid-column: span 1; aspect-ratio: 4 / 3; }
+    .galeria-carousel__viewport { height: clamp(260px, 55vw, 420px); }
+    .galeria-carousel__nav { width: 36px; height: 36px; }
+    .galeria-carousel__nav svg { width: 18px; height: 18px; }
+    .galeria-carousel__thumb { flex: 0 0 64px; height: 46px; }
 
     .sobre__stats { gap: 1.5rem; }
 
