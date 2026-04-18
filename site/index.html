@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CS Training Center - Academia completa em São Sebastião da Grama. Musculação, funcional, jump, dança, muay thai e muito mais. Seu Corpo, Sua Casa.">
+    <meta name="keywords" content="academia, musculação, funcional, São Sebastião da Grama, CS Training Center, gym, muay thai, jump, dança">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="CS Training Center">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CS Training Center | Seu Corpo, Sua Casa">
+    <meta property="og:description" content="Academia completa em São Sebastião da Grama com musculação, aulas de funcional, jump, dança, muay thai e muito mais.">
+    <meta property="og:image" content="assets/images/hero.jpg">
+    <meta property="og:locale" content="pt_BR">
+
+    <title>CS Training Center | Seu Corpo, Sua Casa</title>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HealthClub",
+        "name": "CS Training Center",
+        "description": "Academia completa em São Sebastião da Grama com musculação, aulas de funcional, jump, dança e muay thai.",
+        "url": "",
+        "logo": "assets/icons/logo.jpg",
+        "image": "assets/images/hero.jpg",
+        "telephone": "+55-19-98350-7646",
+        "email": "email@email.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "R. João Ribeiro da Luz, 433",
+            "addressLocality": "São Sebastião da Grama",
+            "addressRegion": "SP",
+            "postalCode": "13790-000",
+            "addressCountry": "BR"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "05:00",
+                "closes": "12:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "13:00",
+                "closes": "22:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Saturday","Sunday"],
+                "opens": "07:00",
+                "closes": "11:00"
+            }
+        ],
+        "sameAs": ["https://www.instagram.com/cs_trainingcenter/"],
+        "priceRange": "$$"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo" aria-label="CS Training Center - Página inicial">
+                <img src="assets/icons/logo.jpg" alt="CS Training Center" width="120" height="52">
+            </a>
+
+            <button class="nav__toggle" id="navToggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav__menu" id="navMenu" role="list">
+                <li><a href="#sobre" class="nav__link">Sobre</a></li>
+                <li><a href="#servicos" class="nav__link">Serviços</a></li>
+                <li><a href="#planos" class="nav__link">Planos</a></li>
+                <li><a href="#galeria" class="nav__link">Galeria</a></li>
+                <li><a href="#equipe" class="nav__link">Equipe</a></li>
+                <li><a href="#contato" class="nav__link">Contato</a></li>
+                <li>
+                    <a href="https://wa.me/5519983507646?text=Olá!%20Quero%20saber%20mais%20sobre%20a%20CS%20Training%20Center."
+                       class="nav__link nav__link--cta"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Matricule-se
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ========== HERO ========== -->
+        <section class="hero" id="home" aria-label="Apresentação da academia">
+            <div class="hero__overlay" aria-hidden="true"></div>
+            <div class="hero__content container">
+                <p class="hero__label">Academia em São Sebastião da Grama</p>
+                <h1 class="hero__title">Seu Corpo,<br><span>Sua Casa</span></h1>
+                <p class="hero__subtitle">
+                    Transforme sua vida com treinos de qualidade e uma equipe dedicada ao seu resultado.
+                </p>
+                <div class="hero__actions">
+                    <a href="#planos" class="btn btn--primary">Ver Planos</a>
+                    <a href="#sobre" class="btn btn--outline">Conheça a Academia</a>
+                </div>
+            </div>
+            <div class="hero__scroll" aria-hidden="true"><span></span></div>
+        </section>
+
+        <!-- ========== SOBRE ========== -->
+        <section class="sobre" id="sobre" aria-labelledby="sobre-titulo">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Quem Somos</span>
+                    <h2 class="section-title" id="sobre-titulo">Sobre a CS Training Center</h2>
+                </div>
+                <div class="sobre__grid">
+                    <div class="sobre__text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <p>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                            culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore
+                            veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        </p>
+                        <div class="sobre__stats" aria-label="Números da academia">
+                            <div class="stat">
+                                <span class="stat__number">500+</span>
+                                <span class="stat__label">Alunos</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__number">4</span>
+                                <span class="stat__label">Professores</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__number">6+</span>
+                                <span class="stat__label">Modalidades</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sobre__image">
+                        <img src="assets/images/galeria/galeria.png"
+                             alt="Interior da CS Training Center - Área de musculação"
+                             loading="lazy"
+                             width="600" height="460">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SERVIÇOS ========== -->
+        <section class="servicos" id="servicos" aria-labelledby="servicos-titulo">
+            <div class="container">
+                <div class="section-header section-header--light">
+                    <span class="section-tag">O que Oferecemos</span>
+                    <h2 class="section-title" id="servicos-titulo">Nossos Serviços</h2>
+                </div>
+                <div class="servicos__grid">
+
+                    <article class="servico-card">
+                        <div class="servico-card__icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4v16M18 4v16M2 8h4M18 8h4M2 16h4M18 16h4M6 12h12"/></svg>
+                        </div>
+                        <h3>Musculação</h3>
+                        <p>Equipamentos modernos e atualizados para seu desenvolvimento físico com segurança e eficiência.</p>
+                    </article>
+
+                    <article class="servico-card">
+                        <div class="servico-card__icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+                        </div>
+                        <h3>Aeróbios</h3>
+                        <p>Área completa com esteiras, bikes e elípticos para seu condicionamento cardiovascular.</p>
+                    </article>
+
+                    <article class="servico-card">
+                        <div class="servico-card__icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                        </div>
+                        <h3>Funcional</h3>
+                        <p>Aulas dinâmicas com movimentos funcionais que melhoram sua performance no dia a dia.</p>
+                    </article>
+
+                    <article class="servico-card">
+                        <div class="servico-card__icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        </div>
+                        <h3>Jump</h3>
+                        <p>Aulas na mini-cama elástica que trabalham equilíbrio, coordenação e queima calórica intensa.</p>
+                    </article>
+
+                    <article class="servico-card">
+                        <div class="servico-card__icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                        </div>
+                        <h3>Dança</h3>
+                        <p>Aulas animadas que combinam movimento, ritmo e diversão para resultados físicos e bem-estar.</p>
+                    </article>
+
+                    <article class="servico-card">
+                        <div class="servico-card__icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg>
+                        </div>
+                        <h3>Muay Thai</h3>
+                        <p>Arte marcial completa que desenvolve força, resistência, agilidade e autodisciplina.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PLANOS ========== -->
+        <section class="planos" id="planos" aria-labelledby="planos-titulo">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Invista em Você</span>
+                    <h2 class="section-title" id="planos-titulo">Nossos Planos</h2>
+                    <p class="section-subtitle">Encontre o plano ideal para seus objetivos</p>
+                </div>
+                <div class="planos__grid">
+
+                    <article class="plano-card">
+                        <div class="plano-card__header">
+                            <h3>Musculação</h3>
+                            <div class="plano-card__price">
+                                <span class="price__currency">R$</span>
+                                <span class="price__value">115</span>
+                                <span class="price__period">/mês</span>
+                            </div>
+                        </div>
+                        <ul class="plano-card__features" aria-label="Benefícios do plano Musculação">
+                            <li>Acesso à sala de musculação</li>
+                            <li>Equipamentos completos</li>
+                            <li>Avaliação física</li>
+                            <li>Acompanhamento de professor</li>
+                        </ul>
+                        <a href="https://wa.me/5519983507646?text=Olá!%20Tenho%20interesse%20no%20plano%20Musculação."
+                           class="btn btn--primary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Matricule-se
+                        </a>
+                    </article>
+
+                    <article class="plano-card plano-card--featured">
+                        <div class="plano-card__badge">Mais Popular</div>
+                        <div class="plano-card__header">
+                            <h3>Musculação + Aulas</h3>
+                            <div class="plano-card__price">
+                                <span class="price__currency">R$</span>
+                                <span class="price__value">120</span>
+                                <span class="price__period">/mês</span>
+                            </div>
+                        </div>
+                        <ul class="plano-card__features" aria-label="Benefícios do plano Musculação + Aulas">
+                            <li>Acesso à sala de musculação</li>
+                            <li>Todas as aulas coletivas</li>
+                            <li>Avaliação física</li>
+                            <li>Acompanhamento de professor</li>
+                            <li>Funcional, Jump, Dança e mais</li>
+                        </ul>
+                        <a href="https://wa.me/5519983507646?text=Olá!%20Tenho%20interesse%20no%20plano%20Musculação%20%2B%20Aulas."
+                           class="btn btn--primary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Matricule-se
+                        </a>
+                    </article>
+
+                    <article class="plano-card plano-card--vip">
+                        <div class="plano-card__badge plano-card__badge--vip">VIP</div>
+                        <div class="plano-card__header">
+                            <h3>Semestral VIP</h3>
+                            <div class="plano-card__price">
+                                <span class="price__currency">6x R$</span>
+                                <span class="price__value">105</span>
+                                <span class="price__period">/mês</span>
+                            </div>
+                        </div>
+                        <ul class="plano-card__features" aria-label="Benefícios do plano VIP Semestral">
+                            <li>Tudo do plano Musculação + Aulas</li>
+                            <li>Parcelado em 6x sem juros</li>
+                            <li>Economia de R$&nbsp;90 no semestre</li>
+                            <li>Prioridade em horários</li>
+                            <li>Avaliação física mensal</li>
+                        </ul>
+                        <a href="https://wa.me/5519983507646?text=Olá!%20Tenho%20interesse%20no%20plano%20VIP%20Semestral."
+                           class="btn btn--primary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Matricule-se
+                        </a>
+                    </article>
+
+                    <article class="plano-card">
+                        <div class="plano-card__header">
+                            <h3>Kids</h3>
+                            <div class="plano-card__price">
+                                <span class="price__currency">R$</span>
+                                <span class="price__value">80</span>
+                                <span class="price__period">/mês</span>
+                            </div>
+                        </div>
+                        <ul class="plano-card__features" aria-label="Benefícios do plano Kids">
+                            <li>Plano infantil especializado</li>
+                            <li>2 aulas de musculação/semana</li>
+                            <li>1 aula de funcional/semana</li>
+                            <li>Acompanhamento pedagógico</li>
+                        </ul>
+                        <a href="https://wa.me/5519983507646?text=Olá!%20Tenho%20interesse%20no%20plano%20Kids."
+                           class="btn btn--primary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Matricule-se
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== GALERIA ========== -->
+        <section class="galeria" id="galeria" aria-labelledby="galeria-titulo">
+            <div class="container">
+                <div class="section-header section-header--light">
+                    <span class="section-tag">Nossa Estrutura</span>
+                    <h2 class="section-title" id="galeria-titulo">Galeria</h2>
+                </div>
+                <div class="galeria__grid">
+                    <figure class="galeria__item galeria__item--large">
+                        <img src="assets/images/hero.jpg"
+                             alt="Sala principal da CS Training Center"
+                             loading="lazy" width="800" height="560">
+                    </figure>
+                    <figure class="galeria__item">
+                        <img src="assets/images/galeria/galeria.png"
+                             alt="Área de musculação da CS Training Center"
+                             loading="lazy" width="600" height="280">
+                    </figure>
+                    <figure class="galeria__item">
+                        <img src="assets/images/galeria/galeria1.png"
+                             alt="Equipamentos da CS Training Center"
+                             loading="lazy" width="600" height="280">
+                    </figure>
+                    <figure class="galeria__item">
+                        <img src="assets/images/galeria/galeria2.png"
+                             alt="Área de aulas coletivas da CS Training Center"
+                             loading="lazy" width="600" height="280">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== EQUIPE ========== -->
+        <section class="equipe" id="equipe" aria-labelledby="equipe-titulo">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Nossos Profissionais</span>
+                    <h2 class="section-title" id="equipe-titulo">Nossa Equipe</h2>
+                    <p class="section-subtitle">Profissionais qualificados e dedicados ao seu resultado</p>
+                </div>
+                <div class="equipe__grid">
+
+                    <article class="professor-card">
+                        <div class="professor-card__photo">
+                            <img src="https://i.pravatar.cc/300?img=11"
+                                 alt="Professor de Musculação e Funcional"
+                                 loading="lazy" width="300" height="300">
+                        </div>
+                        <div class="professor-card__info">
+                            <h3>Professor</h3>
+                            <span>Musculação &amp; Funcional</span>
+                        </div>
+                    </article>
+
+                    <article class="professor-card">
+                        <div class="professor-card__photo">
+                            <img src="https://i.pravatar.cc/300?img=5"
+                                 alt="Professora de Dança e Jump"
+                                 loading="lazy" width="300" height="300">
+                        </div>
+                        <div class="professor-card__info">
+                            <h3>Professora</h3>
+                            <span>Dança &amp; Jump</span>
+                        </div>
+                    </article>
+
+                    <article class="professor-card">
+                        <div class="professor-card__photo">
+                            <img src="https://i.pravatar.cc/300?img=12"
+                                 alt="Professor de Muay Thai"
+                                 loading="lazy" width="300" height="300">
+                        </div>
+                        <div class="professor-card__info">
+                            <h3>Professor</h3>
+                            <span>Muay Thai</span>
+                        </div>
+                    </article>
+
+                    <article class="professor-card">
+                        <div class="professor-card__photo">
+                            <img src="https://i.pravatar.cc/300?img=9"
+                                 alt="Professora de Aeróbios e Funcional"
+                                 loading="lazy" width="300" height="300">
+                        </div>
+                        <div class="professor-card__info">
+                            <h3>Professora</h3>
+                            <span>Aeróbios &amp; Funcional</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONTATO ========== -->
+        <section class="contato" id="contato" aria-labelledby="contato-titulo">
+            <div class="container">
+                <div class="section-header section-header--light">
+                    <span class="section-tag">Fale Conosco</span>
+                    <h2 class="section-title" id="contato-titulo">Contato</h2>
+                </div>
+                <div class="contato__grid">
+                    <div class="contato__info">
+
+                        <div class="contato__item">
+                            <div class="contato__icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <h3>Endereço</h3>
+                                <address>
+                                    R. João Ribeiro da Luz, 433<br>
+                                    Centro, São Sebastião da Grama – SP<br>
+                                    CEP: 13790-000
+                                </address>
+                            </div>
+                        </div>
+
+                        <div class="contato__item">
+                            <div class="contato__icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.58 1.25h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.09 6.09l1.82-1.82a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg>
+                            </div>
+                            <div>
+                                <h3>WhatsApp</h3>
+                                <a href="https://wa.me/5519983507646" target="_blank" rel="noopener noreferrer">
+                                    (19) 98350-7646
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contato__item">
+                            <div class="contato__icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <h3>E-mail</h3>
+                                <a href="mailto:email@email.com">email@email.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contato__item">
+                            <div class="contato__icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div>
+                                <h3>Horários de Funcionamento</h3>
+                                <p><strong>Segunda a Sexta:</strong> 05:00–12:00 e 13:00–22:00</p>
+                                <p><strong>Sábado e Domingo:</strong> 07:00–11:00</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="contato__map">
+                        <iframe
+                            src="https://maps.google.com/maps?q=R.+Jo%C3%A3o+Ribeiro+da+Luz%2C+433%2C+Centro%2C+S%C3%A3o+Sebasti%C3%A3o+da+Grama%2C+SP&output=embed&z=16"
+                            width="100%"
+                            height="420"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Localização da CS Training Center no Google Maps">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+
+                <div class="footer__brand">
+                    <a href="#home" aria-label="CS Training Center - Voltar ao início">
+                        <img src="assets/icons/logo.jpg" alt="CS Training Center" width="120" height="48">
+                    </a>
+                    <p>Seu Corpo, Sua Casa</p>
+                    <div class="footer__social">
+                        <a href="https://www.instagram.com/cs_trainingcenter/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Instagram da CS Training Center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="https://wa.me/5519983507646"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="WhatsApp da CS Training Center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Links Rápidos</h4>
+                    <ul role="list">
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#planos">Planos</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#equipe">Equipe</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h4>Contato</h4>
+                    <address>
+                        R. João Ribeiro da Luz, 433<br>
+                        Centro, São Sebastião da Grama – SP
+                    </address>
+                    <a href="https://wa.me/5519983507646">(19) 98350-7646</a>
+                    <a href="mailto:email@email.com">email@email.com</a>
+                </div>
+
+                <div class="footer__hours">
+                    <h4>Horários</h4>
+                    <p><strong>Seg. a Sex.</strong><br>05:00–12:00 | 13:00–22:00</p>
+                    <p><strong>Sáb. e Dom.</strong><br>07:00–11:00</p>
+                </div>
+
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2025 CS Training Center. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile nav toggle
+        const toggle = document.getElementById('navToggle');
+        const menu   = document.getElementById('navMenu');
+
+        toggle.addEventListener('click', () => {
+            const isOpen = menu.classList.toggle('nav__menu--open');
+            toggle.setAttribute('aria-expanded', isOpen);
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+        });
+
+        document.querySelectorAll('.nav__link').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('nav__menu--open');
+                toggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Sticky header
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('header--scrolled', window.scrollY > 60);
+        }, { passive: true });
+
+        // Scroll reveal
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll(
+            '.servico-card, .plano-card, .professor-card, .galeria__item, .sobre__grid, .contato__item'
+        ).forEach(el => revealObserver.observe(el));
+    </script>
+
+</body>
+</html>
