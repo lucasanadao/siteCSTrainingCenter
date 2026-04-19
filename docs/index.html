@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CS Training Center - Academia completa em São Sebastião da Grama. Musculação, funcional, jump, dança, muay thai e muito mais. Seu Corpo, Sua Casa.">
-    <meta name="keywords" content="academia, musculação, funcional, São Sebastião da Grama, CS Training Center, gym, muay thai, jump, dança">
+    <meta name="description" content="CS Training Center — academia completa em São Sebastião da Grama. Musculação, funcional, jump, dança, muay thai, pilates. Seu Corpo, Sua Casa.">
+    <meta name="keywords" content="academia, musculação, funcional, São Sebastião da Grama, CS Training Center, muay thai, jump, dança, pilates">
     <meta name="robots" content="index, follow">
     <meta name="author" content="CS Training Center">
+    <meta name="theme-color" content="#111111">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="CS Training Center | Seu Corpo, Sua Casa">
-    <meta property="og:description" content="Academia completa em São Sebastião da Grama com musculação, aulas de funcional, jump, dança, muay thai e muito mais.">
-    <meta property="og:image" content="assets/images/hero.jpg">
+    <meta property="og:description" content="Academia completa em São Sebastião da Grama com musculação, aulas de funcional, jump, dança, muay thai e pilates.">
+    <meta property="og:image" content="assets/images/hero.PNG">
     <meta property="og:locale" content="pt_BR">
+
+    <link rel="icon" type="image/png" href="assets/icons/logo.png">
+    <link rel="apple-touch-icon" href="assets/icons/logo.png">
 
     <title>CS Training Center | Seu Corpo, Sua Casa</title>
 
@@ -21,12 +25,10 @@
         "@context": "https://schema.org",
         "@type": "HealthClub",
         "name": "CS Training Center",
-        "description": "Academia completa em São Sebastião da Grama com musculação, aulas de funcional, jump, dança e muay thai.",
-        "url": "",
+        "description": "Academia completa em São Sebastião da Grama com musculação, aulas de funcional, jump, dança, muay thai e pilates.",
         "logo": "assets/icons/logo.png",
-        "image": "assets/images/hero.jpg",
+        "image": "assets/images/hero.PNG",
         "telephone": "+55-19-98350-7646",
-        "email": "email@email.com",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "R. João Ribeiro da Luz, 433",
@@ -62,11 +64,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+    <a href="#home" class="skip-link">Pular para o conteúdo</a>
 
     <!-- ========== HEADER ========== -->
     <header class="header" id="header">
@@ -100,25 +104,40 @@
         </nav>
     </header>
 
-    <main>
+    <main id="home">
 
         <!-- ========== HERO ========== -->
-        <section class="hero" id="home" aria-label="Apresentação da academia">
+        <section class="hero" aria-label="Apresentação da academia">
             <div class="hero__overlay" aria-hidden="true"></div>
             <div class="hero__content container">
-                <p class="hero__label">Academia em São Sebastião da Grama</p>
+                <p class="hero__label">
+                    <span class="hero__label-dot" aria-hidden="true"></span>
+                    Academia em São Sebastião da Grama
+                </p>
                 <h1 class="hero__title">
                     <img src="assets/icons/slogan.png" alt="Seu Corpo, Sua Casa" class="hero__slogan-img">
                 </h1>
                 <p class="hero__subtitle">
-                    Transforme sua vida com treinos de qualidade e uma equipe dedicada ao seu resultado.
+                    Estrutura de ponta, equipe dedicada e um ambiente que faz você querer voltar todos os dias.
                 </p>
                 <div class="hero__actions">
-                    <a href="#planos" class="btn btn--primary">Ver Planos</a>
+                    <a href="https://wa.me/5519983507646?text=Olá!%20Quero%20saber%20mais%20sobre%20a%20CS%20Training%20Center."
+                       class="btn btn--primary"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Matricule-se Agora
+                    </a>
                     <a href="#sobre" class="btn btn--outline">Conheça a Academia</a>
                 </div>
+                <ul class="hero__trust" role="list" aria-label="Destaques da academia">
+                    <li><strong>5</strong> anos de história</li>
+                    <li><strong>30+</strong>aparelhos</li>
+                    <li><strong>7+</strong> modalidades</li>
+                </ul>
             </div>
-            <div class="hero__scroll" aria-hidden="true"><span></span></div>
+            <a href="#sobre" class="hero__scroll" aria-label="Rolar para a próxima seção">
+                <span></span>
+            </a>
         </section>
 
         <!-- ========== SOBRE ========== -->
@@ -138,14 +157,26 @@
                             Hoje, contamos com equipamentos de última geração, com marcas presentes nos melhores centros de treinamento do país. Nossa área de aeróbico é moderna e completa, com esteiras, escada Matrix e aparelhos novos, pensados para entregar performance, conforto e segurança.
                         </p>
                         <p>
-                            Mas a CS vai além da estrutura.
-
-                            Construímos uma identidade própria o jeito CS de ser. Um ambiente irreverente, profissional e ao mesmo tempo próximo. Aqui, não existe apenas a relação entre professor e aluno. Existe conexão, acompanhamento de verdade e um sentimento de pertencimento.
+                            Mas a CS vai além da estrutura. Construímos uma identidade própria — o jeito CS de ser. Um ambiente irreverente, profissional e ao mesmo tempo próximo. Aqui, não existe apenas a relação entre professor e aluno: existe conexão, acompanhamento de verdade e um sentimento de pertencimento.
                         </p>
+                        <div class="sobre__stats" aria-label="Números da academia">
+                            <div class="stat">
+                                <span class="stat__number">5</span>
+                                <span class="stat__label">Professores</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__number">7<span class="stat__plus">+</span></span>
+                                <span class="stat__label">Modalidades</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__number">5</span>
+                                <span class="stat__label">Anos de história</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="sobre__image">
-                        <img src="assets/images/hero.PNG"
-                             alt="Interior da CS Training Center - Área de musculação"
+                        <img src="assets/images/galeria/IMG_0424.PNG"
+                             alt="Interior da CS Training Center"
                              loading="lazy"
                              width="600" height="460">
                     </div>
@@ -159,6 +190,7 @@
                 <div class="section-header section-header--light">
                     <span class="section-tag">O que Oferecemos</span>
                     <h2 class="section-title" id="servicos-titulo">Nossos Serviços</h2>
+                    <p class="section-subtitle">Modalidades pensadas para todos os objetivos e perfis</p>
                 </div>
                 <div class="servicos__grid">
 
@@ -216,6 +248,20 @@
                         </div>
                         <h3>Pilates</h3>
                         <p>Método que fortalece o core, melhora a postura, flexibilidade e proporciona bem-estar físico e mental.</p>
+                    </article>
+
+                    <article class="servico-card servico-card--cta">
+                        <div class="servico-card__icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </div>
+                        <h3>Não encontrou?</h3>
+                        <p>Fale com a gente no WhatsApp e descubra todas as nossas aulas e horários.</p>
+                        <a href="https://wa.me/5519983507646?text=Olá!%20Gostaria%20de%20saber%20quais%20modalidades%20vocês%20oferecem."
+                           class="servico-card__link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Falar no WhatsApp →
+                        </a>
                     </article>
 
                 </div>
@@ -285,10 +331,11 @@
                         <div class="plano-card__header">
                             <h3>Semestral VIP</h3>
                             <div class="plano-card__price">
-                                <span class="price__currency">6x R$</span>
+                                <span class="price__currency">R$</span>
                                 <span class="price__value">105</span>
                                 <span class="price__period">/mês</span>
                             </div>
+                            <p class="plano-card__price-note">Em 6x sem juros · economia de R$&nbsp;90</p>
                         </div>
                         <ul class="plano-card__features" aria-label="Benefícios do plano VIP Semestral">
                             <li>Tudo do plano Musculação + Aulas</li>
@@ -338,6 +385,7 @@
                 <div class="section-header section-header--light">
                     <span class="section-tag">Nossa Estrutura</span>
                     <h2 class="section-title" id="galeria-titulo">Galeria</h2>
+                    <p class="section-subtitle">Arraste, toque nas miniaturas ou use as setas para navegar</p>
                 </div>
                 <div class="galeria-carousel" role="region" aria-label="Carrossel de fotos">
                     <div class="galeria-carousel__viewport" id="galeriaViewport">
@@ -349,7 +397,7 @@
                     <button class="galeria-carousel__nav galeria-carousel__nav--next" id="galeriaNext" aria-label="Próxima foto">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
                     </button>
-                    <div class="galeria-carousel__counter" id="galeriaCounter" aria-live="polite">1 / 13</div>
+                    <div class="galeria-carousel__counter" id="galeriaCounter" aria-live="polite"></div>
                 </div>
                 <div class="galeria-carousel__thumbs" id="galeriaThumbs" role="list" aria-label="Miniaturas da galeria"></div>
             </div>
@@ -403,25 +451,25 @@
 
                     <article class="professor-card">
                         <div class="professor-card__photo">
-                            <img src="assets/images/equipe/larissa.PNG"
-                                 alt="Larissa - Professora de Pilates"
-                                 loading="lazy" width="300" height="300">
-                        </div>
-                        <div class="professor-card__info">
-                            <h3>Larissa</h3>
-                            <span>Professora de Pilates</span>
-                        </div>
-                    </article>
-
-                    <article class="professor-card">
-                        <div class="professor-card__photo">
                             <img src="assets/images/equipe/karina.PNG"
                                  alt="Karina - Professora de Educação Física"
                                  loading="lazy" width="300" height="300">
                         </div>
                         <div class="professor-card__info">
                             <h3>Karina</h3>
-                            <span>Prof. de Educação Física</span>
+                            <span>Profa. de Educação Física</span>
+                        </div>
+                    </article>
+
+                    <article class="professor-card">
+                        <div class="professor-card__photo">
+                            <img src="assets/images/equipe/larissa.PNG"
+                                 alt="Larissa - Professora de Pilates"
+                                 loading="lazy" width="300" height="300">
+                        </div>
+                        <div class="professor-card__info">
+                            <h3>Larissa</h3>
+                            <span>Profa. de Pilates</span>
                         </div>
                     </article>
 
@@ -439,7 +487,9 @@
                 <div class="contato__grid">
                     <div class="contato__info">
 
-                        <div class="contato__item">
+                        <a href="https://www.google.com/maps/search/?api=1&query=R.+Jo%C3%A3o+Ribeiro+da+Luz%2C+433%2C+S%C3%A3o+Sebasti%C3%A3o+da+Grama%2C+SP"
+                           target="_blank" rel="noopener noreferrer"
+                           class="contato__item contato__item--link">
                             <div class="contato__icon" aria-hidden="true">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                             </div>
@@ -451,38 +501,38 @@
                                     CEP: 13790-000
                                 </address>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="contato__item">
+                        <a href="https://wa.me/5519983507646" target="_blank" rel="noopener noreferrer"
+                           class="contato__item contato__item--link">
                             <div class="contato__icon" aria-hidden="true">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.58 1.25h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.09 6.09l1.82-1.82a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg>
                             </div>
                             <div>
                                 <h3>WhatsApp</h3>
-                                <a href="https://wa.me/5519983507646" target="_blank" rel="noopener noreferrer">
-                                    (19) 98350-7646
-                                </a>
+                                <span>(19) 98350-7646</span>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="contato__item">
+                        <a href="https://www.instagram.com/cs_trainingcenter/" target="_blank" rel="noopener noreferrer"
+                           class="contato__item contato__item--link">
                             <div class="contato__icon" aria-hidden="true">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                             </div>
                             <div>
-                                <h3>E-mail</h3>
-                                <a href="mailto:email@email.com">email@email.com</a>
+                                <h3>Instagram</h3>
+                                <span>@cs_trainingcenter</span>
                             </div>
-                        </div>
+                        </a>
 
                         <div class="contato__item">
                             <div class="contato__icon" aria-hidden="true">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                             </div>
                             <div>
-                                <h3>Horários de Funcionamento</h3>
-                                <p><strong>Segunda a Sexta:</strong> 05:00–12:00 e 13:00–22:00</p>
-                                <p><strong>Sábado e Domingo:</strong> 07:00–11:00</p>
+                                <h3>Horários</h3>
+                                <p><strong>Seg. a Sex.:</strong> 05:00–12:00 e 13:00–22:00</p>
+                                <p><strong>Sáb. e Dom.:</strong> 07:00–11:00</p>
                             </div>
                         </div>
 
@@ -492,7 +542,7 @@
                         <iframe
                             src="https://maps.google.com/maps?q=R.+Jo%C3%A3o+Ribeiro+da+Luz%2C+433%2C+Centro%2C+S%C3%A3o+Sebasti%C3%A3o+da+Grama%2C+SP&output=embed&z=16"
                             width="100%"
-                            height="420"
+                            height="100%"
                             style="border:0;"
                             allowfullscreen=""
                             loading="lazy"
@@ -533,7 +583,7 @@
                 </div>
 
                 <div class="footer__links">
-                    <h4>Links Rápidos</h4>
+                    <h4>Navegação</h4>
                     <ul role="list">
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#servicos">Serviços</a></li>
@@ -551,7 +601,6 @@
                         Centro, São Sebastião da Grama – SP
                     </address>
                     <a href="https://wa.me/5519983507646">(19) 98350-7646</a>
-                    <a href="mailto:email@email.com">email@email.com</a>
                 </div>
 
                 <div class="footer__hours">
@@ -563,12 +612,30 @@
             </div>
 
             <div class="footer__bottom">
-                <p>&copy; 2025 CS Training Center. Todos os direitos reservados.</p>
+                <p>&copy; <span id="footerYear">2026</span> CS Training Center. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Floating WhatsApp button -->
+    <a href="https://wa.me/5519983507646?text=Olá!%20Quero%20saber%20mais%20sobre%20a%20CS%20Training%20Center."
+       class="fab-whatsapp"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Conversar no WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+            <path d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39-.064 0-.131-.03-.19-.064-.41-.206-1.5-.774-2.58-1.735-1.082-.963-1.828-2.14-2.045-2.523-.063-.11-.145-.24-.145-.39 0-.43.96-1.21.96-1.583 0-.13-.105-.263-.19-.394-.11-.171-1.084-2.594-1.347-2.84-.183-.172-.395-.197-.656-.197h-.525c-.267 0-.676.09-.997.463-.323.374-1.234 1.215-1.234 2.96s1.257 3.437 1.433 3.675c.177.237 2.479 3.964 6.17 5.429 3.69 1.466 3.69.977 4.351.916.66-.061 2.135-.872 2.438-1.715.303-.842.303-1.56.213-1.716-.091-.156-.334-.248-.708-.434-.371-.188-2.19-1.084-2.532-1.215z"/>
+            <path d="M16 0C7.164 0 0 7.164 0 16c0 2.892.77 5.604 2.114 7.944L0 32l8.26-2.088C10.536 31.244 13.188 32 16 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.255c-2.584 0-4.988-.74-7.024-2.008l-.503-.3-5.208 1.317 1.392-5.07-.328-.522A13.203 13.203 0 012.745 16c0-7.308 5.947-13.255 13.255-13.255S29.255 8.692 29.255 16 23.308 29.255 16 29.255z"/>
+        </svg>
+    </a>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
     <script>
+    (function () {
         // Mobile nav toggle
         const toggle = document.getElementById('navToggle');
         const menu   = document.getElementById('navMenu');
@@ -576,22 +643,32 @@
         toggle.addEventListener('click', () => {
             const isOpen = menu.classList.toggle('nav__menu--open');
             toggle.setAttribute('aria-expanded', isOpen);
+            toggle.classList.toggle('nav__toggle--open', isOpen);
             document.body.style.overflow = isOpen ? 'hidden' : '';
         });
 
         document.querySelectorAll('.nav__link').forEach(link => {
             link.addEventListener('click', () => {
                 menu.classList.remove('nav__menu--open');
+                toggle.classList.remove('nav__toggle--open');
                 toggle.setAttribute('aria-expanded', 'false');
                 document.body.style.overflow = '';
             });
         });
 
-        // Sticky header
-        const header = document.getElementById('header');
+        // Sticky header + back-to-top visibility
+        const header     = document.getElementById('header');
+        const backToTop  = document.getElementById('backToTop');
+
         window.addEventListener('scroll', () => {
-            header.classList.toggle('header--scrolled', window.scrollY > 60);
+            const y = window.scrollY;
+            header.classList.toggle('header--scrolled', y > 60);
+            backToTop.classList.toggle('back-to-top--visible', y > 600);
         }, { passive: true });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
 
         // Scroll reveal
         const revealObserver = new IntersectionObserver((entries) => {
@@ -604,74 +681,76 @@
         }, { threshold: 0.1 });
 
         document.querySelectorAll(
-            '.servico-card, .plano-card, .professor-card, .sobre__grid, .contato__item'
+            '.servico-card, .plano-card, .professor-card, .sobre__grid, .contato__item, .stat'
         ).forEach(el => revealObserver.observe(el));
+
+        // Footer year
+        const yearEl = document.getElementById('footerYear');
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+    })();
     </script>
 
     <script>
     // Gallery Carousel
     (function () {
-        var images = [
-            { src: 'assets/images/hero.PNG',                   alt: 'CS Training Center' },
-            { src: 'assets/images/galeria/IMG_0424.PNG',        alt: 'CS Training Center' },
-            { src: 'assets/images/galeria/IMG_1424.PNG',        alt: 'CS Training Center' },
-            { src: 'assets/images/galeria/IMG_1456.PNG',        alt: 'CS Training Center' },
-            { src: 'assets/images/galeria/IMG_1699.PNG',        alt: 'CS Training Center' },
-            { src: 'assets/images/galeria/IMG_1715.PNG',        alt: 'CS Training Center' },
-            { src: 'assets/images/galeria/IMG_2663.PNG',        alt: 'CS Training Center' },
-            { src: 'assets/images/galeria/IMG_2664.PNG',        alt: 'CS Training Center' },
-            { src: 'assets/images/galeria/IMG_0268.jpg',        alt: 'CS Training Center' },
-            { src: 'assets/images/galeria/IMG_0366.jpg',        alt: 'CS Training Center' },
-            { src: 'assets/images/galeria/IMG_1599.jpg',        alt: 'CS Training Center' },
-            { src: 'assets/images/galeria/IMG_2546.jpg',        alt: 'CS Training Center' },
+        const images = [
+            { src: 'assets/images/hero.PNG',                    alt: 'CS Training Center — fachada' },
+            { src: 'assets/images/galeria/IMG_0424.PNG',        alt: 'Área de musculação' },
+            { src: 'assets/images/galeria/IMG_1424.PNG',        alt: 'Equipamentos de última geração' },
+            { src: 'assets/images/galeria/IMG_1456.PNG',        alt: 'Área de aulas coletivas' },
+            { src: 'assets/images/galeria/IMG_1699.PNG',        alt: 'Sala de musculação' },
+            { src: 'assets/images/galeria/IMG_1715.PNG',        alt: 'Ambiente CS Training Center' },
+            { src: 'assets/images/galeria/IMG_2663.PNG',        alt: 'Equipamentos modernos' },
+            { src: 'assets/images/galeria/IMG_2664.PNG',        alt: 'Área cardio' },
+            { src: 'assets/images/galeria/IMG_0268.jpg',        alt: 'Detalhes da academia' },
+            { src: 'assets/images/galeria/IMG_0366.jpg',        alt: 'Estrutura moderna' },
+            { src: 'assets/images/galeria/IMG_1599.jpg',        alt: 'Interior da academia' },
+            { src: 'assets/images/galeria/IMG_2546.jpg',        alt: 'Academia CS' },
         ];
 
-        var track    = document.getElementById('galeriaTrack');
-        var thumbsEl = document.getElementById('galeriaThumbs');
-        var counter  = document.getElementById('galeriaCounter');
-        var prevBtn  = document.getElementById('galeriaPrev');
-        var nextBtn  = document.getElementById('galeriaNext');
-        var viewport = document.getElementById('galeriaViewport');
+        const track    = document.getElementById('galeriaTrack');
+        const thumbsEl = document.getElementById('galeriaThumbs');
+        const counter  = document.getElementById('galeriaCounter');
+        const prevBtn  = document.getElementById('galeriaPrev');
+        const nextBtn  = document.getElementById('galeriaNext');
+        const viewport = document.getElementById('galeriaViewport');
 
         if (!track) return;
 
-        var current = 0;
-        var total   = images.length;
-        counter.textContent = '1 / ' + total;
+        let current = 0;
+        const total = images.length;
 
-        // Build slides + thumbnails
-        images.forEach(function (img, i) {
-            // Slide
-            var slide = document.createElement('div');
+        images.forEach((img, i) => {
+            const slide = document.createElement('div');
             slide.className = 'galeria-carousel__slide';
-            var image = document.createElement('img');
+            const image = document.createElement('img');
             image.src     = img.src;
             image.alt     = img.alt;
             image.loading = i === 0 ? 'eager' : 'lazy';
+            image.decoding = 'async';
             slide.appendChild(image);
             track.appendChild(slide);
 
-            // Thumbnail
-            var thumb = document.createElement('button');
+            const thumb = document.createElement('button');
             thumb.className = 'galeria-carousel__thumb' + (i === 0 ? ' active' : '');
-            thumb.setAttribute('aria-label', 'Ver foto ' + (i + 1));
+            thumb.setAttribute('aria-label', 'Ver foto ' + (i + 1) + ' de ' + total);
             thumb.setAttribute('role', 'listitem');
-            var tImg = document.createElement('img');
+            const tImg = document.createElement('img');
             tImg.src     = img.src;
             tImg.alt     = '';
             tImg.loading = 'lazy';
             thumb.appendChild(tImg);
-            thumb.addEventListener('click', function () { goTo(i); });
+            thumb.addEventListener('click', () => goTo(i));
             thumbsEl.appendChild(thumb);
         });
 
         function update() {
             track.style.transform = 'translateX(-' + (current * 100) + '%)';
             counter.textContent   = (current + 1) + ' / ' + total;
-            Array.from(thumbsEl.children).forEach(function (t, i) {
+            Array.from(thumbsEl.children).forEach((t, i) => {
                 t.classList.toggle('active', i === current);
             });
-            var activeThumb = thumbsEl.children[current];
+            const activeThumb = thumbsEl.children[current];
             if (activeThumb) {
                 activeThumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
             }
@@ -682,39 +761,49 @@
             update();
         }
 
-        prevBtn.addEventListener('click', function () { goTo(current - 1); });
-        nextBtn.addEventListener('click', function () { goTo(current + 1); });
+        prevBtn.addEventListener('click', () => goTo(current - 1));
+        nextBtn.addEventListener('click', () => goTo(current + 1));
 
-        // Keyboard navigation
-        document.addEventListener('keydown', function (e) {
+        // Keyboard only when gallery in viewport
+        let galleryVisible = false;
+        const gallerySection = document.getElementById('galeria');
+        new IntersectionObserver((entries) => {
+            galleryVisible = entries[0].isIntersecting;
+        }, { threshold: 0.2 }).observe(gallerySection);
+
+        document.addEventListener('keydown', (e) => {
+            if (!galleryVisible) return;
             if (e.key === 'ArrowLeft')  goTo(current - 1);
             if (e.key === 'ArrowRight') goTo(current + 1);
         });
 
         // Touch / swipe
-        var touchStartX = 0;
-        viewport.addEventListener('touchstart', function (e) {
+        let touchStartX = 0;
+        viewport.addEventListener('touchstart', (e) => {
             touchStartX = e.touches[0].clientX;
         }, { passive: true });
-        viewport.addEventListener('touchend', function (e) {
-            var dx = e.changedTouches[0].clientX - touchStartX;
-            if (Math.abs(dx) > 40) goTo(current + (dx < 0 ? 1 : -1));
+        viewport.addEventListener('touchend', (e) => {
+            const dx = e.changedTouches[0].clientX - touchStartX;
+            if (Math.abs(dx) > 50) goTo(current + (dx < 0 ? 1 : -1));
         });
 
         // Mouse drag (desktop)
-        var dragStartX = 0;
-        var isDragging = false;
-        viewport.addEventListener('mousedown', function (e) {
+        let dragStartX = 0;
+        let isDragging = false;
+        viewport.addEventListener('mousedown', (e) => {
             dragStartX = e.clientX;
             isDragging = true;
         });
-        viewport.addEventListener('mouseup', function (e) {
+        viewport.addEventListener('mouseup', (e) => {
             if (!isDragging) return;
             isDragging = false;
-            var dx = e.clientX - dragStartX;
-            if (Math.abs(dx) > 40) goTo(current + (dx < 0 ? 1 : -1));
+            const dx = e.clientX - dragStartX;
+            if (Math.abs(dx) > 50) goTo(current + (dx < 0 ? 1 : -1));
         });
-        viewport.addEventListener('mouseleave', function () { isDragging = false; });
+        viewport.addEventListener('mouseleave', () => { isDragging = false; });
+
+        // Initial counter
+        counter.textContent = '1 / ' + total;
     })();
     </script>
 
