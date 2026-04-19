@@ -13,12 +13,20 @@
     <meta property="og:title" content="CS Training Center | Seu Corpo, Sua Casa">
     <meta property="og:description" content="Academia completa em São Sebastião da Grama com musculação, aulas de funcional, jump, dança, muay thai e pilates.">
     <meta property="og:image" content="assets/images/hero.PNG">
+    <meta property="og:url" content="https://lucasanadao.github.io/siteCSTrainingCenter/">
+    <meta property="og:site_name" content="CS Training Center">
     <meta property="og:locale" content="pt_BR">
 
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CS Training Center | Seu Corpo, Sua Casa">
+    <meta name="twitter:description" content="Academia completa em São Sebastião da Grama com musculação, aulas de funcional, jump, dança, muay thai e pilates.">
+    <meta name="twitter:image" content="assets/images/hero.PNG">
+
+    <link rel="canonical" href="https://lucasanadao.github.io/siteCSTrainingCenter/">
     <link rel="icon" type="image/png" href="assets/icons/logo.png">
     <link rel="apple-touch-icon" href="assets/icons/logo.png">
 
-    <title>CS Training Center | Seu Corpo, Sua Casa</title>
+    <title>CS Training Center | Academia em São Sebastião da Grama – Seu Corpo, Sua Casa</title>
 
     <script type="application/ld+json">
     {
@@ -59,6 +67,18 @@
         ],
         "sameAs": ["https://www.instagram.com/cs_trainingcenter/"],
         "priceRange": "$$"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Tour pela CS Training Center",
+        "description": "Conheça a estrutura da CS Training Center em São Sebastião da Grama: equipamentos modernos, área de aeróbicos e ambiente de treino.",
+        "thumbnailUrl": "assets/images/galeria/IMG_0424.PNG",
+        "contentUrl": "assets/video/sobre.mp4",
+        "uploadDate": "2026-04-19"
     }
     </script>
 
@@ -115,7 +135,8 @@
                     Academia em São Sebastião da Grama
                 </p>
                 <h1 class="hero__title">
-                    <img src="assets/icons/slogan.png" alt="Seu Corpo, Sua Casa" class="hero__slogan-img">
+                    <img src="assets/icons/slogan.png" alt="Seu Corpo, Sua Casa" class="hero__slogan-img" width="560" height="180">
+                    <span class="visually-hidden">CS Training Center — Seu Corpo, Sua Casa</span>
                 </h1>
                 <p class="hero__subtitle">
                     Estrutura de ponta, equipe dedicada e um ambiente que faz você querer voltar todos os dias.
@@ -131,7 +152,7 @@
                 </div>
                 <ul class="hero__trust" role="list" aria-label="Destaques da academia">
                     <li><strong>5</strong> anos de história</li>
-                    <li><strong>30+</strong>aparelhos</li>
+                    <li><strong>30+</strong> aparelhos</li>
                     <li><strong>7+</strong> modalidades</li>
                 </ul>
             </div>
@@ -174,11 +195,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="sobre__image">
-                        <img src="assets/images/galeria/IMG_0424.PNG"
-                             alt="Interior da CS Training Center"
-                             loading="lazy"
-                             width="600" height="460">
+                    <div class="sobre__media">
+                        <video
+                            id="sobreVideo"
+                            class="sobre__video"
+                            src="assets/video/sobre.mp4"
+                            poster="assets/images/galeria/IMG_0424.PNG"
+                            muted
+                            loop
+                            playsinline
+                            preload="metadata"
+                            aria-label="Tour pela CS Training Center"
+                            width="600" height="460">
+                            Seu navegador não suporta vídeo HTML5.
+                        </video>
+                        <button type="button" class="sobre__video-toggle" id="sobreVideoToggle" aria-label="Ativar som do vídeo" aria-pressed="false">
+                            <svg class="icon-muted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+                            <svg class="icon-unmuted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -687,6 +721,40 @@
         // Footer year
         const yearEl = document.getElementById('footerYear');
         if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+        // Sobre video: play when visible, pause when not
+        const sobreVideo  = document.getElementById('sobreVideo');
+        const sobreToggle = document.getElementById('sobreVideoToggle');
+
+        if (sobreVideo) {
+            const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            const videoObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !reduceMotion) {
+                        const p = sobreVideo.play();
+                        if (p && typeof p.catch === 'function') p.catch(() => {});
+                    } else {
+                        sobreVideo.pause();
+                    }
+                });
+            }, { threshold: 0.35 });
+            videoObserver.observe(sobreVideo);
+
+            if (sobreToggle) {
+                sobreToggle.addEventListener('click', () => {
+                    sobreVideo.muted = !sobreVideo.muted;
+                    const unmuted = !sobreVideo.muted;
+                    sobreToggle.setAttribute('aria-pressed', unmuted);
+                    sobreToggle.setAttribute('aria-label', unmuted ? 'Silenciar vídeo' : 'Ativar som do vídeo');
+                    sobreToggle.classList.toggle('sobre__video-toggle--on', unmuted);
+                    if (unmuted) {
+                        const p = sobreVideo.play();
+                        if (p && typeof p.catch === 'function') p.catch(() => {});
+                    }
+                });
+            }
+        }
     })();
     </script>
 
